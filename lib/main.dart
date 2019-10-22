@@ -17,9 +17,9 @@ class _HomeState extends State<Home> {
     setState(() {
       _people += delta;
 
-      if(_infoText < 0){
+      if(_people < 0){
         _infoText = "N° Invertido";
-      }else if(_people <= 10){
+      }else if(_people <= 5){
         _infoText = "Pode entrar agora!";
       }else{
         _infoText = "Lotado!";
